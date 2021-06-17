@@ -12,6 +12,7 @@ spl_autoload_register(function ($class_name) {
  */
 set_error_handler(function ($errno, $errstr, $errfile, $errline) {
 	header('HTTP/1.1 500 Internal Server Error', TRUE, 500);
+	die($errstr . PHP_EOL);
 });
 
 /**

@@ -26,7 +26,7 @@ Content-Length: 43
 Connection: close
 Content-Type: text/html; charset=UTF-8
 
-Current date is: 2021-06-17T19:38:22+00:00
+Silly error, catchable by set_error_handler().
 
 $ curl http://localhost:8666?terrible -i
 HTTP/1.1 500 Terrible Internal Server Error
